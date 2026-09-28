@@ -1,0 +1,225 @@
+body {
+    margin: 0px;
+    background-color: #2D2727;
+    font-family: Arial, sans-serif;
+}
+
+#myVideo {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    min-height: 100vh;
+    color: #f1f1f1;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 40px;
+    color: #FFD95A;
+}
+
+header h2 {
+    margin: 0px;
+}
+
+header nav a {
+    color: #FFD95A;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #FFD95A;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.5;
+    width: 500px;
+}
+
+/* achievements part */
+
+.achievements {
+    background-color: #F5F1EA;
+    color: #2D2727;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.achievements h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.achievement-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.achievement-card:hover {
+    border-color: #2D2727;
+    background-color: #fafafa;
+}
+
+.achievement-card h3 {
+    margin-top: 0px;
+    font-size: 22px;
+}
+
+.achievement-card p {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #444;
+}
+
+/* projects page */
+
+.projects-intro {
+    background-color: #2D2727;
+    color: #f1f1f1;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.projects-intro h1 {
+    color: #FFD95A;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.projects {
+    background-color: #F5F1EA;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.project-card:hover {
+    border-color: #2D2727;
+}
+
+.project-card video {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    margin-top: 0px;
+    font-size: 20px;
+    color: #2D2727;
+}
+
+.project-card p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #444;
+}
+
+footer {
+    background-color: #F5F1EA;
+    color: #2D2727;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: #2D2727;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    .hero p {
+        width: 100%;
+    }
+
+    .achievement-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header h2 {
+        margin-bottom: 10px;
+    }
+}
