@@ -41,7 +41,7 @@ header nav a {
     margin-left: 20px;
 }
 
-.hero {
+.front-page {
     display: flex;
     align-items: center;
     height: 500px;
@@ -52,20 +52,18 @@ header nav a {
     padding-right: 20px;
 }
 
-.hero h1 {
+.front-page h1 {
     font-size: 48px;
     color: #FFD95A;
     margin-bottom: 15px;
     margin-top: 0px;
 }
 
-.hero p {
+.front-page p {
     font-size: 18px;
     line-height: 1.5;
     width: 500px;
 }
-
-/* achievements part */
 
 .achievements {
     background-color: #F5F1EA;
@@ -80,7 +78,7 @@ header nav a {
     margin-bottom: 30px;
 }
 
-.achievement-grid {
+.agrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -89,7 +87,7 @@ header nav a {
     margin-right: auto;
 }
 
-.achievement-card {
+.acard {
     background-color: #ffffff;
     border: 1px solid #ddd;
     padding: 20px;
@@ -97,25 +95,23 @@ header nav a {
     transition: 0.2s;
 }
 
-.achievement-card:hover {
+.acard:hover {
     border-color: #2D2727;
     background-color: #fafafa;
 }
 
-.achievement-card h3 {
+.acard h3 {
     margin-top: 0px;
     font-size: 22px;
 }
 
-.achievement-card p {
+.acard p {
     font-size: 15px;
     line-height: 1.4;
     color: #444;
 }
 
-/* projects page */
-
-.projects-intro {
+.intro {
     background-color: #2D2727;
     color: #f1f1f1;
     padding-top: 80px;
@@ -123,7 +119,7 @@ header nav a {
     text-align: center;
 }
 
-.projects-intro h1 {
+.intro h1 {
     color: #FFD95A;
     font-size: 42px;
     margin-bottom: 10px;
@@ -135,7 +131,7 @@ header nav a {
     padding-bottom: 60px;
 }
 
-.project-grid {
+.pgrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -144,7 +140,7 @@ header nav a {
     margin-right: auto;
 }
 
-.project-card {
+.pcard {
     background-color: #ffffff;
     border: 1px solid #ddd;
     padding: 15px;
@@ -152,22 +148,22 @@ header nav a {
     transition: 0.2s;
 }
 
-.project-card:hover {
+.pcard:hover {
     border-color: #2D2727;
 }
 
-.project-card video {
+.pcard video {
     width: 100%;
     margin-bottom: 10px;
 }
 
-.project-card h3 {
+.pcard h3 {
     margin-top: 0px;
     font-size: 20px;
     color: #2D2727;
 }
 
-.project-card p {
+.pcard p {
     font-size: 14px;
     line-height: 1.4;
     color: #444;
@@ -186,7 +182,7 @@ footer p {
     font-size: 14px;
 }
 
-.footer-links a {
+.links a {
     color: #2D2727;
     text-decoration: none;
     margin-left: 10px;
@@ -194,17 +190,17 @@ footer p {
     font-size: 14px;
 }
 
-.footer-links a:hover {
+.links a:hover {
     text-decoration: underline;
 }
 
 @media (max-width: 600px) {
 
-    .hero p {
+    .front-page p {
         width: 100%;
     }
 
-    .achievement-grid {
+    .agrid {
         width: 100%;
         grid-template-columns: 1fr;
     }
